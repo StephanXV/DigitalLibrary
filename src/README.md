@@ -1,1 +1,1 @@
-This folder will contain the source code.
+This folder contains the source code.
