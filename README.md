@@ -1,4 +1,10 @@
 # DigitalLibrary
 
-This repository will contain an object-oriented design project which consists in creating a digital library.
-The first half of the project is focused on the requirements analysis and on modelling the architecture of the project.
+Istruzioni per l'avvio:
+-configurare il file "config" in questo modo:
+ 1 <porta del database>
+ 2 <utente del database>
+ 3 <password del database>
+
+-eseguire il dump "dumpDigitalLibrary"
+-eseguire "library.jar", oppure importare il progetto in Eclipse (il main si trova in "application")
