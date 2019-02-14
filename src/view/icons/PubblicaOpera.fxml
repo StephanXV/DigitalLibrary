@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="729.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="373.0" layoutY="672.0" prefHeight="27.0" prefWidth="143.0" spacing="3.0">
+         <children>
+            <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8-literature-100.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="pubbButt" onAction="#pubbMod" prefHeight="27.0" prefWidth="116.0" style="-fx-background-color: #375fc6;" text="Pubblica" textFill="WHITE" />
+         </children>
+      </HBox>
+      <JFXListView fx:id="listOpinc" layoutX="327.0" layoutY="165.0" prefHeight="400.0" prefWidth="235.0" style="-fx-text-fill: #375fc6;" />
+      <Label fx:id="complIm" layoutX="301.0" layoutY="118.0" onMouseClicked="#immClick" onMouseEntered="#immEn" onMouseExited="#immEs" text="Completa Immagine" textFill="#375fc6" />
+      <Label fx:id="complTras" layoutX="464.0" layoutY="118.0" onMouseClicked="#trasClick" onMouseEntered="#trasEn" onMouseExited="#trasEx" text="Completa Trascrizione" textFill="#375fc6" />
+      <Line endX="-100.0" endY="45.0" layoutX="544.0" layoutY="104.0" startX="-100.0" />
+      <Label fx:id="mess" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="328.0" layoutY="590.0" prefHeight="46.0" prefWidth="235.0" textAlignment="CENTER" textFill="#375fc6" />
+   </children>
+</AnchorPane>

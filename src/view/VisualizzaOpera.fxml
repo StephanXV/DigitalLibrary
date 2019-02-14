@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.VisualizzaOperaController">
+   <children>
+      <ImageView fx:id="immagine" fitHeight="559.0" fitWidth="432.0" layoutX="68.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="trascrizione" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="545.0" layoutY="48.0" prefHeight="559.0" prefWidth="469.0" text="Label" wrapText="true" />
+      <JFXListView fx:id="miniature" layoutX="68.0" layoutY="638.0" onMouseClicked="#listClick" orientation="HORIZONTAL" prefHeight="135.0" prefWidth="1059.0" />
+      <Polygon fx:id="back" fill="DODGERBLUE" layoutX="68.0" layoutY="355.0" onMouseClicked="#backIsFired" onMouseEntered="#freccia1EN" onMouseExited="#freccia1EX" points="-59.666664123535156, -25.333343505859375, -13.0, -1.666656494140625, -13.0, -57.333343505859375" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="forward" fill="DODGERBLUE" layoutX="1163.0" layoutY="355.0" onMouseClicked="#forwardIsFired" onMouseEntered="#frecciaEN" onMouseExited="#frecciaEX" points="30.0, -30.666656494140625, -13.0, -1.666656494140625, -13.0, -57.333343505859375" stroke="BLACK" strokeType="INSIDE" />
+      <JFXButton fx:id="download" layoutX="1043.0" layoutY="571.0" onAction="#downloadIsFired" prefHeight="31.0" prefWidth="125.0" stylesheets="@css/butt.css" text="Download Opera" textFill="WHITE" />
+      <Label fx:id="down" alignment="CENTER" contentDisplay="CENTER" layoutX="1025.0" layoutY="613.0" prefHeight="17.0" prefWidth="162.0" textAlignment="CENTER" textFill="#1cb530" wrapText="true" />
+      <HBox layoutX="55.0" layoutY="14.0" prefHeight="23.0" prefWidth="1175.0" spacing="5.0">
+         <children>
+            <HBox prefHeight="23.0" prefWidth="222.0" spacing="5.0">
+               <children>
+                  <Label text="Titolo:" textFill="#a1a6a5">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tit" prefHeight="17.0" prefWidth="176.0" textFill="#375fc6">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="23.0" prefWidth="328.0" spacing="5.0">
+               <children>
+                  <Label text="Autori:" textFill="#a1a6a5">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="aut" prefHeight="17.0" prefWidth="279.0" textFill="#375fc6">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="23.0" prefWidth="304.0" spacing="5.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="71.0" text="Categorie:" textFill="#a1a6a5">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cat" prefHeight="17.0" prefWidth="230.0" textFill="#375fc6">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="23.0" prefWidth="150.0" spacing="5.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="53.0" text="Pagina:" textFill="#a1a6a5">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pag" prefHeight="17.0" prefWidth="100.0" textFill="#375fc6">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="879.0" layoutY="10.0" prefHeight="23.0" prefWidth="150.0" spacing="5.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="41.0" text="Anno:" textFill="#a1a6a5">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="anno" prefHeight="17.0" prefWidth="100.0" textFill="#375fc6">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

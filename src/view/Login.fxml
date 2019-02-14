@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="850.0" style="-fx-background-color: #2d3447;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <HBox alignment="BOTTOM_CENTER" layoutX="261.0" layoutY="121.0" prefHeight="71.0" prefWidth="289.0" AnchorPane.topAnchor="121.0">
+         <children>
+            <Label layoutX="431.0" layoutY="114.0" prefHeight="63.0" prefWidth="128.0" text="Digital" textFill="#a0a2ab">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label layoutX="506.0" layoutY="114.0" prefHeight="60.0" prefWidth="195.0" text="Library" textFill="#2196f3">
+               <font>
+                  <Font size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="356.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="21.0">
+         <image>
+            <Image url="@icons/icons8-library-100.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" layoutX="545.0" layoutY="46.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="46.0">
+         <children>
+            <Label layoutX="701.0" layoutY="52.0" text="Non sei ancora membro?" textFill="#a0a2ab">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="registerButton" onAction="#registerButtonFired" stylesheets="@css/login.css" text="Registrati" textFill="#2196f3" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="226.0" layoutY="260.0" prefHeight="51.0" prefWidth="359.0">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="277.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/icons8-user-100.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </ImageView>
+            <JFXTextField fx:id="usernameField" focusColor="#2196f3" prefHeight="29.0" prefWidth="318.0" promptText="Email" style="-fx-prompt-text-fill: #a0a2ab; -fx-text-fill: #2196f3;" unFocusColor="#a0a2ab" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="226.0" layoutY="339.0" prefHeight="51.0" prefWidth="359.0">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="277.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/icons8-lock-100.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </ImageView>
+            <JFXPasswordField fx:id="passwordField" focusColor="#2196f3" prefHeight="29.0" prefWidth="304.0" promptText="Password" style="-fx-prompt-text-fill: #a0a2ab; -fx-text-fill: #2196f3;" unFocusColor="#a0a2ab" />
+         </children>
+      </HBox>
+      <JFXButton fx:id="loginButton" layoutX="523.0" layoutY="442.0" onAction="#loginButtonFired" stylesheets="@css/login.css" text="Login" textFill="#2196f3" />
+      <JFXButton fx:id="unknownPassLink" layoutX="226.0" layoutY="442.0" onAction="#unknownPassLinkFired" text="Hai dimenticato la password?" textFill="#a0a2ab" underline="true" />
+      <Label fx:id="errorsField" alignment="CENTER" contentDisplay="CENTER" layoutX="172.0" layoutY="202.0" prefHeight="51.0" prefWidth="468.0" textAlignment="CENTER" textFill="RED" />
+      <JFXSpinner fx:id="barCount" layoutX="491.0" layoutY="442.0" prefHeight="27.0" prefWidth="16.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="668.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ImmagineConvalidaController">
+   <children>
+      <ImageView fx:id="immV" fitHeight="611.0" fitWidth="439.0" layoutX="226.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox layoutX="315.0" layoutY="14.0" prefHeight="78.0" prefWidth="262.0" spacing="5.0">
+         <children>
+            <HBox prefHeight="20.0" prefWidth="238.0" spacing="8.0">
+               <children>
+                  <Label text="Opera:" textFill="#a1a6a5" />
+                  <Label fx:id="opera" prefHeight="17.0" prefWidth="189.0" textFill="#375fc6">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="20.0" prefWidth="238.0" spacing="8.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="50.0" text="Pagina:" textFill="#a1a6a5" />
+                  <Label fx:id="pagina" prefHeight="17.0" prefWidth="189.0" textFill="#375fc6">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="20.0" prefWidth="238.0" spacing="8.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="110.0" text="Data Inserimento:" textFill="#a1a6a5" />
+                  <Label fx:id="data" prefHeight="17.0" prefWidth="144.0" textFill="#375fc6">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="22.0" layoutY="14.0" prefHeight="33.0" prefWidth="110.0" spacing="5.0">
+         <children>
+            <ImageView fitHeight="27.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/iconfinder_undo-back-arrow_2931166.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="backbutt" buttonType="RAISED" onAction="#back" stylesheets="@css/butt.css" text="Indietro" textFill="WHITE" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="729.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.VisualizzaProfiloController">
+   <children>
+      <VBox layoutX="124.0" layoutY="120.0" prefHeight="172.0" prefWidth="321.0" spacing="4.0">
+         <children>
+            <HBox prefHeight="38.0" prefWidth="608.0" spacing="7.0">
+               <children>
+                  <Label alignment="TOP_LEFT" text="Nome:" textFill="#a0a2ab" />
+                  <Label fx:id="nomePR" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="17.0" prefWidth="120.0" textAlignment="CENTER" textFill="#375fc6" />
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="608.0" spacing="7.0">
+               <children>
+                  <Label alignment="TOP_LEFT" prefHeight="17.0" prefWidth="66.0" text="Cognome:" textAlignment="CENTER" textFill="#a0a2ab" />
+                  <Label fx:id="cognomePR" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="17.0" prefWidth="120.0" textAlignment="CENTER" textFill="#375fc6" />
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="608.0" spacing="7.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Data di Nascita:" textAlignment="CENTER" textFill="#a0a2ab" />
+                  <Label fx:id="nascPR" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="17.0" prefWidth="120.0" textAlignment="CENTER" textFill="#375fc6" />
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="608.0" spacing="7.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Data Di Iscrizione:" textAlignment="CENTER" textFill="#a0a2ab" />
+                  <Label fx:id="iscrPR" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="17.0" prefWidth="120.0" textAlignment="CENTER" textFill="#375fc6" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="124.0" layoutY="308.0" prefHeight="172.0" prefWidth="321.0" spacing="4.0">
+         <children>
+            <HBox prefHeight="38.0" prefWidth="608.0" spacing="7.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Email:" textAlignment="CENTER" textFill="#a0a2ab" />
+                  <Label fx:id="emailPR" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="17.0" prefWidth="120.0" textAlignment="CENTER" textFill="#375fc6" />
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="608.0" spacing="7.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Password:" textAlignment="CENTER" textFill="#a0a2ab" />
+                  <Label fx:id="passPR" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="17.0" prefWidth="89.0" text="**************" textAlignment="CENTER" textFill="#375fc6" />
+                  <Label fx:id="mostraPass" onMouseClicked="#mostraPass1" onMouseEntered="#mostraMouse" onMouseExited="#esciMouse" text="Mostra" textFill="#375fc6" underline="true">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="608.0" spacing="7.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Domanda Di Sicurezza:" textAlignment="CENTER" textFill="#a0a2ab" />
+                  <Label fx:id="domandaPR" alignment="TOP_LEFT" prefHeight="37.0" prefWidth="164.0" textFill="#375fc6" wrapText="true" />
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="608.0" spacing="7.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Risposta Di Sicurezza:" textAlignment="CENTER" textFill="#a0a2ab" />
+                  <Label fx:id="rispostaPR" alignment="TOP_LEFT" prefHeight="36.0" prefWidth="172.0" textFill="#375fc6" wrapText="true" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="124.0" layoutY="499.0" prefHeight="127.0" prefWidth="321.0" spacing="4.0">
+         <children>
+            <HBox prefHeight="38.0" prefWidth="608.0" spacing="7.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Sesso:" textAlignment="CENTER" textFill="#a0a2ab" />
+                  <Label fx:id="sessoPR" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="17.0" prefWidth="120.0" textAlignment="CENTER" textFill="#375fc6" />
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="608.0" spacing="7.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Esperienza:" textAlignment="CENTER" textFill="#a0a2ab" />
+                  <Label fx:id="expPR" alignment="TOP_LEFT" contentDisplay="CENTER" prefHeight="17.0" prefWidth="120.0" textAlignment="CENTER" textFill="#375fc6" />
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="608.0" spacing="7.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Privilegio:" textAlignment="CENTER" textFill="#a0a2ab" />
+                  <Label fx:id="privPR" alignment="TOP_LEFT" prefHeight="32.0" prefWidth="240.0" textFill="#375fc6" wrapText="true" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Line endX="-100.0" endY="434.0" layoutX="554.0" layoutY="178.0" startX="-100.0" startY="-73.0" stroke="#375fc6" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="591.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons/books.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="489.0" layoutY="135.0" prefHeight="66.0" prefWidth="354.0">
+         <children>
+            <ImageView fx:id="imageProf" fitHeight="71.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="91.0" prefWidth="271.0" text="Profilo Utente" textAlignment="CENTER" textFill="#4068d0" underline="true">
+               <font>
+                  <Font name="System Bold" size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="373.0" layoutY="672.0" prefHeight="27.0" prefWidth="143.0">
+         <children>
+            <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/iconfinder_Streamline-22_185042.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="modificaButt1" alignment="TOP_LEFT" onAction="#buttMod" prefHeight="27.0" prefWidth="116.0" stylesheets="@css/butt.css" text="Modifica Profilo" textFill="WHITE" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

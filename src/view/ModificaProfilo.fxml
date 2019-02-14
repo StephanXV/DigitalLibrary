@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="729.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModificaProfiloController">
+   <children>
+      <VBox layoutX="174.0" layoutY="133.0" prefHeight="172.0" prefWidth="371.0" spacing="4.0">
+         <children>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="38.0" prefWidth="321.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Nome:" textAlignment="CENTER" textFill="#a0a2ab" />
+                  <JFXTextField fx:id="nomePR1" focusColor="#375fc6" prefHeight="27.0" prefWidth="216.0" style="-fx-text-fill: #375fc6; -fx-text-prompt-fill: #a0a2ab;">
+                     <HBox.margin>
+                        <Insets left="103.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="38.0" prefWidth="608.0" spacing="10.0">
+               <children>
+                  <Label alignment="TOP_LEFT" prefHeight="17.0" prefWidth="66.0" text="Cognome:" textAlignment="CENTER" textFill="#a0a2ab" />
+                  <JFXTextField fx:id="cognomePR1" focusColor="#375fc6" prefHeight="27.0" prefWidth="216.0" style="-fx-text-fill: #375fc6; -fx-text-prompt-fill: #a0a2ab;">
+                     <HBox.margin>
+                        <Insets left="78.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="38.0" prefWidth="608.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Data di Nascita:" textAlignment="CENTER" textFill="#a0a2ab" />
+                  <JFXTextField fx:id="nascPR1" focusColor="#375fc6" prefHeight="13.0" prefWidth="216.0" style="-fx-text-fill: #375fc6; -fx-text-prompt-fill: #a0a2ab;">
+                     <HBox.margin>
+                        <Insets left="46.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="38.0" prefWidth="608.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Data Di Iscrizione:" textAlignment="CENTER" textFill="#a0a2ab" />
+                  <JFXTextField fx:id="iscrPR1" editable="false" focusColor="#375fc6" prefHeight="13.0" prefWidth="216.0" style="-fx-text-fill: #375fc6; -fx-text-prompt-fill: #a0a2ab;">
+                     <HBox.margin>
+                        <Insets left="32.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="174.0" layoutY="321.0" prefHeight="172.0" prefWidth="371.0" spacing="4.0">
+         <children>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="38.0" prefWidth="608.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Email:" textAlignment="CENTER" textFill="#a0a2ab" />
+                  <JFXTextField fx:id="emailPR1" focusColor="#375fc6" prefHeight="13.0" prefWidth="216.0" style="-fx-text-fill: #375fc6; -fx-text-prompt-fill: #a0a2ab;">
+                     <HBox.margin>
+                        <Insets left="106.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="38.0" prefWidth="608.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Password:" textAlignment="CENTER" textFill="#a0a2ab" />
+                  <JFXTextField fx:id="passPR1" focusColor="#375fc6" prefHeight="13.0" prefWidth="216.0" style="-fx-text-fill: #375fc6; -fx-text-prompt-fill: #a0a2ab;">
+                     <HBox.margin>
+                        <Insets left="79.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="38.0" prefWidth="608.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Domanda Sicurezza:" textAlignment="CENTER" textFill="#a0a2ab" />
+                  <JFXComboBox fx:id="domPR1" focusColor="#375fc6" prefWidth="216.0" style="-fx-text-fill: #375fc6; -fx-text-prompt-fill: #a0a2ab;">
+                     <HBox.margin>
+                        <Insets left="17.0" />
+                     </HBox.margin>
+                  </JFXComboBox>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="38.0" prefWidth="608.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Risposta Sicurezza:" textAlignment="CENTER" textFill="#a0a2ab" />
+                  <JFXTextField fx:id="rispPR1" focusColor="#375fc6" prefHeight="13.0" prefWidth="216.0" style="-fx-text-fill: #375fc6; -fx-text-prompt-fill: #a0a2ab;">
+                     <HBox.margin>
+                        <Insets left="22.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="174.0" layoutY="509.0" prefHeight="127.0" prefWidth="371.0" spacing="4.0">
+         <children>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="38.0" prefWidth="608.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Sesso:" textAlignment="CENTER" textFill="#a0a2ab" />
+                  <JFXComboBox fx:id="sessoPR1" focusColor="#375fc6" prefWidth="216.0" style="-fx-text-fill: #375fc6; -fx-text-prompt-fill: #a0a2ab;">
+                     <HBox.margin>
+                        <Insets left="102.0" />
+                     </HBox.margin>
+                  </JFXComboBox>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="38.0" prefWidth="608.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Esperienza:" textAlignment="CENTER" textFill="#a0a2ab" />
+                  <JFXTextField fx:id="expPR1" editable="false" focusColor="#375fc6" prefHeight="13.0" prefWidth="216.0" style="-fx-text-fill: #375fc6; -fx-text-prompt-fill: #a0a2ab;">
+                     <HBox.margin>
+                        <Insets left="71.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="38.0" prefWidth="608.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Privilegio:" textAlignment="CENTER" textFill="#a0a2ab" />
+                  <JFXTextField fx:id="privPR1" editable="false" focusColor="#375fc6" prefHeight="13.0" prefWidth="216.0" style="-fx-text-fill: #375fc6; -fx-text-prompt-fill: #a0a2ab;">
+                     <HBox.margin>
+                        <Insets left="82.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="268.0" layoutY="29.0" prefHeight="66.0" prefWidth="354.0">
+         <children>
+            <ImageView fx:id="imageProf1" fitHeight="71.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="91.0" prefWidth="271.0" text="Profilo Utente" textAlignment="CENTER" textFill="#4068d0" underline="true">
+               <font>
+                  <Font name="System Bold" size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox layoutX="591.0" layoutY="155.0" prefHeight="150.0" prefWidth="150.0" spacing="14.0">
+         <children>
+            <HBox prefHeight="27.0" prefWidth="143.0">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/iconfinder_Streamline-22_185042.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="buttNome" onAction="#buttModNome" prefHeight="27.0" prefWidth="116.0" stylesheets="@css/butt.css" text="Salva" textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox prefHeight="27.0" prefWidth="143.0">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/iconfinder_Streamline-22_185042.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="buttCognome" onAction="#buttModCognome" prefHeight="27.0" prefWidth="116.0" stylesheets="@css/butt.css" text="Salva" textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox prefHeight="27.0" prefWidth="143.0">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/iconfinder_Streamline-22_185042.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="buttNasc" onAction="#buttModNasc" prefHeight="27.0" prefWidth="116.0" stylesheets="@css/butt.css" text="Salva" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="591.0" layoutY="527.0" prefHeight="38.0" prefWidth="175.0" spacing="14.0">
+         <children>
+            <HBox prefHeight="27.0" prefWidth="143.0">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/iconfinder_Streamline-22_185042.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="buttSex" onAction="#buttModSex" prefHeight="27.0" prefWidth="116.0" stylesheets="@css/butt.css" text="Salva" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="591.0" layoutY="343.0" prefHeight="150.0" prefWidth="150.0" spacing="14.0">
+         <children>
+            <HBox prefHeight="27.0" prefWidth="143.0">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/iconfinder_Streamline-22_185042.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="buttEmail" onAction="#buttModEmail" prefHeight="27.0" prefWidth="116.0" stylesheets="@css/butt.css" text="Salva" textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox prefHeight="27.0" prefWidth="143.0">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/iconfinder_Streamline-22_185042.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="buttPass" onAction="#buttModPass" prefHeight="27.0" prefWidth="116.0" stylesheets="@css/butt.css" text="Salva" textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox prefHeight="27.0" prefWidth="143.0">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/iconfinder_Streamline-22_185042.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="buttDom" onAction="#buttModDom" prefHeight="27.0" prefWidth="116.0" stylesheets="@css/butt.css" text="Salva" textFill="WHITE" />
+               </children>
+            </HBox>
+            <HBox prefHeight="27.0" prefWidth="275.0">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icons/iconfinder_Streamline-22_185042.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="buttRisp" onAction="#buttModRisp" prefHeight="27.0" prefWidth="116.0" stylesheets="@css/butt.css" text="Salva" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="21.0" layoutY="29.0" prefHeight="27.0" prefWidth="116.0" spacing="4.0">
+         <children>
+            <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/iconfinder_undo-back-arrow_2931166.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="buttind" onAction="#buttModInd" prefHeight="27.0" prefWidth="74.0" stylesheets="@css/butt.css" text="Indietro" textFill="WHITE" />
+         </children>
+      </HBox>
+      <Label fx:id="labelMod" alignment="CENTER" contentDisplay="CENTER" layoutX="310.0" layoutY="665.0" prefHeight="38.0" prefWidth="271.0" textAlignment="CENTER" textFill="#375fc6" />
+      <Label fx:id="text" layoutX="603.0" layoutY="619.0" onMouseClicked="#textClick" onMouseEntered="#textEN" onMouseExited="#textEX" text="Richiedi Privilegio" textFill="#375fc6" underline="true" />
+   </children>
+</AnchorPane>

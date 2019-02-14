@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="729.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RichiediPermessoController">
+   <children>
+      <JFXComboBox layoutX="-61.0" layoutY="311.0" opacity="0.0" prefHeight="1.0" prefWidth="21.0" />
+      <HBox layoutX="307.0" layoutY="365.0" prefHeight="37.0" prefWidth="277.0">
+         <children>
+            <JFXComboBox fx:id="permessoR" focusColor="#2196f3" onAction="#messAct" prefHeight="27.0" prefWidth="196.0" promptText="Permesso" style="-jfx-label-float: true; -fx-prompt-text-fill: #a0a2ab; fx-text-fill: #375fc6;" unFocusColor="#a0a2ab" />
+            <JFXButton fx:id="SalvaR" onAction="#bottonePermesso" prefHeight="29.0" prefWidth="82.0" stylesheets="@css/butt.css" text="Richiedi" textAlignment="CENTER" textFill="WHITE" />
+         </children>
+      </HBox>
+      <Label fx:id="labelPermesso" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="150.0" layoutY="460.0" prefHeight="100.0" prefWidth="591.0" textAlignment="CENTER" textFill="#375fc6" wrapText="true" />
+      <Label fx:id="labelPermesso1" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="150.0" layoutY="128.0" prefHeight="100.0" prefWidth="591.0" text="SCEGLI UN PRIVILEGIO DAL MENU' E CLICCA SU &quot;RICHIEDI" textAlignment="CENTER" textFill="#375fc6" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <HBox layoutX="31.0" layoutY="39.0" prefHeight="27.0" prefWidth="116.0" spacing="4.0">
+         <children>
+            <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/iconfinder_undo-back-arrow_2931166.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="buttind" onAction="#buttModInd" prefHeight="27.0" prefWidth="74.0" stylesheets="@css/butt.css" text="Indietro" textFill="WHITE" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

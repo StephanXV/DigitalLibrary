@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="729.0" prefWidth="890.0" stylesheets="@css/butt.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UploadOperaController">
+   <children>
+      <HBox layoutX="90.0" layoutY="36.0" prefHeight="53.0" prefWidth="645.0" spacing="45.0" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="155.0">
+         <children>
+            <JFXComboBox fx:id="opere" focusColor="#2196f3" onAction="#opSelect" prefHeight="37.0" prefWidth="200.0" promptText="Opera" style="-fx-prompt-text-fill: #a0a2ab; -fx-text-fill: #375fc6; -jfx-label-float: true;" unFocusColor="#a0a2ab">
+               <HBox.margin>
+                  <Insets right="200.0" />
+               </HBox.margin>
+            </JFXComboBox>
+            <JFXComboBox fx:id="pagine" focusColor="#2196f3" onAction="#pagSelect" prefHeight="37.0" prefWidth="200.0" promptText="Pagina" style="-fx-prompt-text-fill: #a0a2ab; -fx-text-fill: #375fc6; -jfx-label-float: true;" unFocusColor="#a0a2ab" />
+         </children>
+      </HBox>
+      <Label fx:id="nomeOpera" layoutX="90.0" layoutY="89.0" prefHeight="25.0" prefWidth="391.0" text="Seleziona un'opera" AnchorPane.leftAnchor="90.0" />
+      <Label fx:id="pagLabel" alignment="CENTER" layoutX="481.0" layoutY="89.0" prefHeight="25.0" prefWidth="306.0" text="Seleziona una pagina non ancora acquisita" wrapText="true" AnchorPane.rightAnchor="103.0" />
+      <JFXButton layoutX="586.0" layoutY="235.0" onAction="#imgSelect" text="Scegli immagine" textFill="WHITE" />
+      <Label fx:id="img" layoutX="594.0" layoutY="296.0" prefHeight="25.0" prefWidth="263.0" text="File:" />
+      <JFXButton layoutX="610.0" layoutY="346.0" onAction="#uploadFired" text="Acquisisci" textFill="WHITE" />
+      <Label fx:id="done" layoutX="586.0" layoutY="413.0" prefHeight="25.0" prefWidth="263.0" />
+      <AnchorPane layoutX="89.0" layoutY="156.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: black;" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="425.0">
+         <children>
+            <ImageView fx:id="imgView" fitHeight="495.0" fitWidth="371.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="3.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

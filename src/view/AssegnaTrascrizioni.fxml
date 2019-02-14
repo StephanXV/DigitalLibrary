@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="729.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AssegnaTrascrizioneController">
+   <children>
+      <JFXComboBox layoutX="-63.0" layoutY="295.0" opacity="0.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="141.0" layoutY="102.0" prefHeight="78.0" prefWidth="614.0" text="SELEZIONARE UN OPERA, SELEZIONARE UNA PAGINA, SELEZIONARE IL TRASCRITTORE, POI PREMERE SU &quot;Assegna&quot;" textAlignment="CENTER" textFill="#375fc6" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="asst" buttonType="RAISED" layoutX="406.0" layoutY="457.0" onAction="#assta" prefHeight="32.0" prefWidth="82.0" stylesheets="@css/butt.css" text="Assegna" textFill="WHITE" />
+      <Label fx:id="messaget" alignment="CENTER" contentDisplay="CENTER" layoutX="147.0" layoutY="601.0" prefHeight="31.0" prefWidth="598.0" textFill="#375fc6" />
+      <Label fx:id="nomet" alignment="CENTER" contentDisplay="CENTER" layoutX="102.0" layoutY="365.0" prefHeight="31.0" prefWidth="199.0" textFill="#375fc6" />
+      <HBox layoutX="102.0" layoutY="296.0" prefHeight="53.0" prefWidth="691.0" spacing="45.0">
+         <children>
+            <JFXComboBox fx:id="opt" focusColor="#2196f3" onAction="#opta" prefHeight="31.0" prefWidth="199.0" promptText="Opera" style="-fx-prompt-text-fill: #a0a2ab; -fx-text-fill: #375fc6; -jfx-label-float: true;" unFocusColor="#a0a2ab" />
+            <JFXComboBox fx:id="imt" focusColor="#2196f3" onAction="#imta" prefHeight="31.0" prefWidth="199.0" promptText="Immagine" style="-fx-prompt-text-fill: #a0a2ab; -fx-text-fill: #375fc6; -jfx-label-float: true;" unFocusColor="#a0a2ab" />
+            <JFXComboBox fx:id="tt" focusColor="#2196f3" onAction="#tta" prefHeight="31.0" prefWidth="199.0" promptText="Trascrittore" style="-fx-prompt-text-fill: #a0a2ab; -fx-text-fill: #375fc6; -jfx-label-float: true;" unFocusColor="#a0a2ab" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
