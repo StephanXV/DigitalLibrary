@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="729.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controller.AssegnaEsperienzaController">
+   <children>
+      <JFXComboBox layoutX="-63.0" layoutY="295.0" opacity="0.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="121.0" layoutY="120.0" prefHeight="81.0" prefWidth="648.0" text="SELEZIONARE UN TRASCRITTORE, SELEZIONARE LA NUOVA ESPERIENZA, POI PREMERE SU &quot;SALVA&quot;" textAlignment="CENTER" textFill="#375fc6" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="esperienzaID" focusColor="#2196f3" layoutX="561.0" layoutY="372.0" onAction="#esAct" prefHeight="32.0" prefWidth="199.0" promptText="Nuova Esperienza" style="-fx-prompt-text-fill: #a0a2ab; -fx-text-fill: #375fc6; -jfx-label-float: true;" unFocusColor="#a0a2ab" />
+      <JFXButton fx:id="saveEXP" buttonType="RAISED" layoutX="404.0" layoutY="488.0" onAction="#salvaEXP" prefHeight="32.0" prefWidth="82.0" stylesheets="@../css/butt.css" text="Salva" textFill="WHITE" />
+      <JFXComboBox fx:id="trascrittoreID" focusColor="#2196f3" layoutX="137.0" layoutY="372.0" onAction="#trAct" prefHeight="31.0" prefWidth="199.0" promptText="Trascrittore" style="-fx-prompt-text-fill: #a0a2ab; -fx-text-fill: #375fc6; -jfx-label-float: true;" unFocusColor="#a0a2ab" />
+      <Label fx:id="messageEXP" alignment="CENTER" contentDisplay="CENTER" layoutX="147.0" layoutY="601.0" prefHeight="31.0" prefWidth="598.0" textFill="#375fc6" />
+      <Label fx:id="espAtt" alignment="CENTER" contentDisplay="CENTER" layoutX="387.0" layoutY="373.0" prefHeight="31.0" prefWidth="106.0" textFill="#375fc6" />
+      <Label layoutX="387.0" layoutY="357.0" text="Esperienza Attuale" textFill="#375fc6">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

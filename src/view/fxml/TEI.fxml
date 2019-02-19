@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.HTMLEditor?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controller.TEIController">
+   <children>
+      <ImageView fx:id="holder" fitHeight="714.0" fitWidth="530.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <HTMLEditor fx:id="editor" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="556.0" layoutY="14.0" prefHeight="714.0" prefWidth="630.0" />
+      <JFXButton fx:id="saveButton" buttonType="RAISED" layoutX="1127.0" layoutY="749.0" onAction="#saveButtonFired" stylesheets="@../css/butt.css" text="Salva" textFill="WHITE" />
+      <Label fx:id="alert" alignment="CENTER" contentDisplay="CENTER" layoutX="317.0" layoutY="749.0" prefHeight="37.0" prefWidth="567.0" textAlignment="CENTER" textFill="#00c914" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="729.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controller.TrascrizioneController">
+   <children>
+      <JFXButton fx:id="trascriviButton" buttonType="RAISED" layoutX="659.0" layoutY="618.0" onAction="#trascriviButtonFired" prefHeight="30.0" prefWidth="91.0" stylesheets="@../css/butt.css" text="Trascrivi" textFill="WHITE" />
+      <TableView fx:id="table" layoutX="162.0" layoutY="53.0" prefHeight="475.0" prefWidth="600.0" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="colNumero" editable="false" prefWidth="108.0" text="N° pagina" />
+          <TableColumn fx:id="colNome" editable="false" prefWidth="339.0" text="Nome Opera" />
+            <TableColumn fx:id="colLingua" editable="false" prefWidth="162.0" text="Lingua" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

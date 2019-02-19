@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="729.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controller.PresentationController">
+   <children>
+      <HBox layoutX="208.0" layoutY="46.0" prefHeight="100.0" prefWidth="475.0" AnchorPane.leftAnchor="208.0" AnchorPane.rightAnchor="207.0" AnchorPane.topAnchor="46.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/icons8-library-100.png" />
+               </image>
+            </ImageView>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="377.0">
+               <children>
+                  <Label layoutX="431.0" layoutY="114.0" prefHeight="83.0" prefWidth="151.0" text="Digital" textFill="#a0a2ab">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label layoutX="506.0" layoutY="114.0" prefHeight="93.0" prefWidth="233.0" text="Library" textFill="#2196f3">
+                     <font>
+                        <Font size="64.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <Label alignment="TOP_LEFT" contentDisplay="TEXT_ONLY" layoutX="49.0" layoutY="195.0" prefHeight="250.0" prefWidth="805.0" text="Benvenuto nella Biblioteca Digitale. Lo scopo della Biblioteca è di consentire la consultazione di manoscritti che devono essere digitalizzati e che costituiscono un patrimonio bibliografico antico per un totale di 60.000 carte (ms. sec. XV-XIX) contenenti memorie storiche della città dell’Aquila. Le digitalizzazioni, effettuate dagli acquisitori, vengono trascritte dai trascrittori in formato TEI. Se lo si desidera, si può partecipare all'attività di raccolta e trascrizione dei manoscritti richiedendo il privilegio nella sezione &quot;Modifica Profilo&quot;. Buona consultazione." textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="49.0" AnchorPane.rightAnchor="36.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <HBox layoutX="104.0" layoutY="508.0" prefHeight="134.0" prefWidth="683.0" spacing="45.0" AnchorPane.leftAnchor="104.0" AnchorPane.rightAnchor="103.0">
+         <children>
+            <AnchorPane prefHeight="134.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="im1" fitHeight="134.0" fitWidth="100.0" onMouseClicked="#imm1" onMouseEntered="#mEN1" onMouseExited="#mEX1" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="134.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="im2" fitHeight="134.0" fitWidth="100.0" onMouseClicked="#imm2" onMouseEntered="#mEN2" onMouseExited="#mEX2" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="166.0" layoutY="10.0" prefHeight="134.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="im3" fitHeight="134.0" fitWidth="100.0" onMouseClicked="#imm3" onMouseEntered="#mEN3" onMouseExited="#mEX3" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="322.0" layoutY="10.0" prefHeight="134.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="im4" fitHeight="134.0" fitWidth="100.0" onMouseClicked="#imm4" onMouseEntered="#mEN4" onMouseExited="#mEX4" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="478.0" layoutY="10.0" prefHeight="134.0" prefWidth="100.0">
+               <children>
+                  <ImageView fx:id="im5" fitHeight="134.0" fitWidth="100.0" onMouseClicked="#imm5" onMouseEntered="#mEN5" onMouseExited="#mEX5" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox layoutX="104.0" layoutY="650.0" prefHeight="49.0" prefWidth="683.0" spacing="45.0" AnchorPane.leftAnchor="104.0" AnchorPane.rightAnchor="92.0">
+         <children>
+            <Label fx:id="lab1" alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="100.0" textAlignment="CENTER" textFill="#375fc6" wrapText="true" />
+            <Label fx:id="lab2" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="100.0" textAlignment="CENTER" textFill="#375fc6" wrapText="true" />
+            <Label fx:id="lab3" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="121.0" layoutY="10.0" prefHeight="40.0" prefWidth="100.0" textAlignment="CENTER" textFill="#375fc6" wrapText="true" />
+            <Label fx:id="lab4" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="232.0" layoutY="10.0" prefHeight="40.0" prefWidth="100.0" textAlignment="CENTER" textFill="#375fc6" wrapText="true" />
+            <Label fx:id="lab5" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="343.0" layoutY="10.0" prefHeight="40.0" prefWidth="100.0" textAlignment="CENTER" textFill="#375fc6" wrapText="true" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="104.0" layoutY="464.0" prefHeight="30.0" prefWidth="308.0" spacing="10.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="167.0" text="Novità della settimana:" textFill="#375fc6">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Line endX="-100.0" endY="22.0" startX="-100.0" stroke="#375fc6" />
+            <Label fx:id="vediTutte" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#vediClick" onMouseEntered="#vediEN" onMouseExited="#vediEX" prefHeight="17.0" prefWidth="77.0" text="Vedi Tutte &gt;" textFill="#a1a6a5" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

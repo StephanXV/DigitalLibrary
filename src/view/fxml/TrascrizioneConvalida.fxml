@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="729.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controller.TrascrizioneConvalidaController">
+   <children>
+      <VBox layoutX="315.0" layoutY="14.0" prefHeight="78.0" prefWidth="277.0" spacing="5.0">
+         <children>
+            <HBox prefHeight="20.0" prefWidth="238.0" spacing="8.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="42.0" text="Opera:" textFill="#a1a6a5" />
+                  <Label fx:id="opera" prefHeight="20.0" prefWidth="213.0" textFill="#375fc6">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="20.0" prefWidth="238.0" spacing="8.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="63.0" text="Pagina:" textFill="#a1a6a5" />
+                  <Label fx:id="pagina" prefHeight="20.0" prefWidth="238.0" textFill="#375fc6">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="20.0" prefWidth="238.0" spacing="8.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="154.0" text="Data Inserimento:" textFill="#a1a6a5" />
+                  <Label fx:id="data" prefHeight="20.0" prefWidth="203.0" textFill="#375fc6">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="31.0" layoutY="116.0" prefHeight="543.0" prefWidth="830.0" spacing="10.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+         <children>
+            <ImageView fx:id="immV" fitHeight="586.0" fitWidth="416.0" pickOnBounds="true" preserveRatio="true" />
+            <TextArea fx:id="tras" onMouseClicked="#clickt" prefHeight="200.0" prefWidth="415.5" wrapText="true" />
+         </children>
+      </HBox>
+      <JFXButton fx:id="modbutt" buttonType="RAISED" layoutX="778.0" layoutY="66.0" onAction="#modbutt" stylesheets="@../css/butt.css" text="Modifica" textFill="WHITE" />
+      <Label fx:id="mess" layoutX="591.0" layoutY="84.0" prefHeight="17.0" prefWidth="144.0" textFill="#28a13f" />
+      <HBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="34.0" prefWidth="110.0" spacing="5.0">
+         <children>
+            <ImageView fitHeight="27.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/iconfinder_undo-back-arrow_2931166.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="backbutt" buttonType="RAISED" onAction="#back" stylesheets="@../css/butt.css" text="Indietro" textFill="WHITE" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

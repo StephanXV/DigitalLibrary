@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #2d3447;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controller.RegisterController">
+   <children>
+      <Label layoutX="293.0" layoutY="31.0" text="Registrazione" textFill="#2196f3">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" layoutX="235.0" layoutY="151.0" prefHeight="322.0" prefWidth="331.0" spacing="40.0">
+         <children>
+            <JFXTextField fx:id="nomeField" focusColor="#2196f3" prefHeight="29.0" prefWidth="318.0" promptText="Nome" style="-fx-prompt-text-fill: #a0a2ab; -fx-text-fill: #2196f3;" unFocusColor="#a0a2ab" />
+            <JFXTextField fx:id="cognomeField" focusColor="#2196f3" prefHeight="29.0" prefWidth="318.0" promptText="Cognome" style="-fx-prompt-text-fill: #a0a2ab; -fx-text-fill: #2196f3;" unFocusColor="#a0a2ab" />
+            <JFXTextField fx:id="emailField" focusColor="#2196f3" prefHeight="29.0" prefWidth="318.0" promptText="E-mail" style="-fx-prompt-text-fill: #a0a2ab; -fx-text-fill: #2196f3;" unFocusColor="#a0a2ab" />
+            <JFXPasswordField fx:id="passwordField" focusColor="#2196f3" prefHeight="37.0" prefWidth="457.0" promptText="Password" style="-fx-prompt-text-fill: #a0a2ab; -fx-text-fill: #2196f3;" unFocusColor="#a0a2ab" />
+            <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="231.0">
+               <children>
+                  <JFXCheckBox fx:id="maleCheck" checkedColor="#2196f3" onAction="#maleChecked" text="M" textFill="#a0a2ab" unCheckedColor="#a0a2ab">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </JFXCheckBox>
+                  <JFXCheckBox fx:id="femaleCheck" checkedColor="#2196f3" onAction="#femaleChecked" text="F" textFill="#a0a2ab" unCheckedColor="#a0a2ab">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </JFXCheckBox>
+                  <JFXDatePicker fx:id="dateField" defaultColor="#2196f3" editable="false" prefHeight="37.0" prefWidth="218.0" promptText=" Data di nascita" stylesheets="@../css/custom.css" />
+               </children>
+            </HBox>
+            <ComboBox fx:id="domandaChoice" prefHeight="37.0" prefWidth="380.0" promptText="Domanda di sicurezza" stylesheets="@../css/custom.css" />
+            <JFXTextField fx:id="rispostaField" focusColor="#2196f3" prefHeight="29.0" prefWidth="318.0" promptText="Risposta" style="-fx-prompt-text-fill: #a0a2ab; -fx-text-fill: #2196f3;" unFocusColor="#a0a2ab" />
+            <JFXButton fx:id="registerButton" onAction="#registerButtonFired" style="-fx-background-color: black;" text="Registrati" textFill="#2196f3" />
+         </children>
+      </VBox>
+      <JFXButton fx:id="indietroButton" layoutX="51.0" layoutY="39.0" onAction="#indietroButtonFired" style="-fx-background-color: black;" text="Indietro" textFill="#2196f3" />
+      <Label fx:id="sexError" alignment="CENTER_RIGHT" layoutY="420.0" prefHeight="29.0" prefWidth="225.0" textFill="RED">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <VBox layoutX="566.0" layoutY="143.0" prefHeight="492.0" prefWidth="232.0" spacing="40.0">
+         <children>
+            <Label fx:id="nomeError" prefHeight="29.0" prefWidth="232.0" textFill="RED">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="cognomeError" prefHeight="29.0" prefWidth="232.0" textFill="RED">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="emailError" prefHeight="29.0" prefWidth="232.0" textFill="RED">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="passwordError" prefHeight="29.0" prefWidth="232.0" textFill="RED">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateError" prefHeight="29.0" prefWidth="232.0" textFill="RED">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="domandaError" prefHeight="29.0" prefWidth="232.0" textFill="RED">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="rispostaError" prefHeight="29.0" prefWidth="232.0" textFill="RED">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="247.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/icons8-add-user-male-100%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="850.0" style="-fx-background-color: #2d3447;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controller.ReimpostaPassController">
+   <children>
+      <HBox alignment="BOTTOM_CENTER" layoutX="255.0" layoutY="123.0" prefHeight="71.0" prefWidth="342.0" AnchorPane.topAnchor="123.0">
+         <children>
+            <Label layoutX="431.0" layoutY="114.0" prefHeight="63.0" prefWidth="114.0" text="Digital" textFill="#a0a2ab">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label layoutX="506.0" layoutY="114.0" text="Library" textFill="#2196f3">
+               <font>
+                  <Font size="48.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="375.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="23.0">
+         <image>
+            <Image url="@../icons/icons8-library-100.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="salvaButton1" layoutX="400.0" layoutY="480.0" onAction="#savefired" stylesheets="@../css/login.css" text="Salva" textFill="#2196f3" />
+      <JFXPasswordField fx:id="nuovaPass" focusColor="#2196f3" layoutX="267.0" layoutY="412.0" prefHeight="29.0" prefWidth="318.0" promptText="Nuova Password" style="-fx-prompt-text-fill: #a0a2ab; -fx-text-fill: #2196f3;" unFocusColor="#a0a2ab" />
+      <JFXTextField fx:id="rispostaSic" focusColor="#2196f3" layoutX="267.0" layoutY="353.0" prefHeight="29.0" prefWidth="318.0" promptText="Risposta" style="-fx-prompt-text-fill: #a0a2ab; -fx-text-fill: #2196f3;" unFocusColor="#a0a2ab" />
+      <Label fx:id="domandaSic" alignment="CENTER" layoutX="267.0" layoutY="303.0" prefHeight="29.0" prefWidth="318.0" textFill="#a0a2ab" />
+      <Label fx:id="message" alignment="CENTER" layoutX="267.0" layoutY="523.0" prefHeight="27.0" prefWidth="318.0" textFill="#2196f3" />
+      <JFXButton fx:id="indietroButton1" layoutX="61.0" layoutY="49.0" onAction="#indietroButton1Fired" stylesheets="@../css/login.css" text="Indietro" textFill="#2196f3" />
+   </children>
+</AnchorPane>

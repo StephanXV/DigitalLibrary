@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controller.HomeController">
+   <top>
+      <AnchorPane prefHeight="0.0" prefWidth="1200.0" style="-fx-background-color: #2d3447; -fx-border-width: 0 0 2px 0; -fx-border-color: #2196f3;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" layoutX="606.0" prefHeight="70.0" prefWidth="777.0" spacing="5.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/man-user.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="displayname" prefHeight="50.0" prefWidth="236.0" text="Benvenuto &lt;nome&gt; &lt;cognome&gt;" textFill="#a0a2ab">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <JFXButton fx:id="logout" layoutX="581.0" layoutY="27.0" onAction="#logoutFired" prefHeight="28.0" prefWidth="84.0" stylesheets="@../css/home.css" text="Logout" textFill="#a0a2ab">
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/icons8-exit-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXTextField fx:id="cerca" focusColor="#2196f3" promptText="Cerca" style="-fx-prompt-text-fill: #a0a2ab; -fx-text-fill: #2196f3;" unFocusColor="#a0a2ab">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+                  <JFXButton fx:id="cercaOpera" onAction="#cercaOperaIsFired" stylesheets="@../css/home.css" text="Cerca Opera" textFill="#a0a2ab">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin></JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="14.0" layoutY="1.0" AnchorPane.leftAnchor="14.0">
+               <children>
+                  <ImageView fitHeight="68.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/icons8-library-100.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="71.0" prefWidth="291.0">
+                     <children>
+                        <Label layoutX="431.0" layoutY="114.0" prefHeight="63.0" prefWidth="118.0" text="Digital" textFill="#a0a2ab">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label layoutX="506.0" layoutY="114.0" prefHeight="60.0" prefWidth="180.0" text="Library" textFill="#2196f3">
+                           <font>
+                              <Font size="48.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <VBox fx:id="vbox" alignment="TOP_CENTER" prefHeight="729.0" prefWidth="299.0" style="-fx-background-color: #2d3447;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="homeButton" onAction="#homeButtonFired" onMouseClicked="#clickHome" onMouseEntered="#homeEN" onMouseExited="#homeEX" prefHeight="69.0" prefWidth="299.0" style="-fx-background-color: #2d3447; -fx-border-radius: 0;" text="Home" textFill="#a0a2ab" />
+            <JFXButton fx:id="profiloButton" onAction="#profiloButtonFired" onMouseClicked="#clickPro" onMouseEntered="#proEN" onMouseExited="#proEX" prefHeight="69.0" prefWidth="310.0" style="-fx-background-color: #2d3447; -fx-border-radius: 0;" text="Visualizza Profilo" textFill="#a0a2ab" />
+            <JFXButton fx:id="acquisizioneButton" onAction="#acquisizioneButtonFired" onMouseClicked="#clickAcq" onMouseEntered="#acqEN" onMouseExited="#acqEX" prefHeight="69.0" prefWidth="310.0" style="-fx-background-color: #2d3447; -fx-border-radius: 0;" text="Acquisizione" textFill="#a0a2ab" />
+            <JFXButton fx:id="insOperaButton" onAction="#insOperaButtonFired" onMouseClicked="#clickIns" onMouseEntered="#opEN" onMouseExited="#opEX" prefHeight="69.0" prefWidth="310.0" style="-fx-background-color: #2d3447; -fx-border-radius: 0;" text="Inserisci Opera" textFill="#a0a2ab" />
+            <JFXButton fx:id="trascrizioneButton" onAction="#trascrizioneButtonFired" onMouseClicked="#clickTra" onMouseEntered="#traEN" onMouseExited="#traEX" prefHeight="69.0" prefWidth="310.0" style="-fx-background-color: #2d3447; -fx-border-radius: 0;" text="Trascrizione" textFill="#a0a2ab" />
+            <JFXButton fx:id="revAcquisizioniButton" onAction="#revAcquisizioniButtonFired" onMouseClicked="#ClickRev" onMouseEntered="#convEN" onMouseExited="#convEX" prefHeight="69.0" prefWidth="310.0" style="-fx-background-color: #2d3447; -fx-border-radius: 0;" text="Revisione Acquisizioni/Trascrizioni" textFill="#a0a2ab" />
+            <JFXButton fx:id="pubblicaOperaButton" onAction="#pubOperaFired" onMouseClicked="#clickPub" onMouseEntered="#pubEN" onMouseExited="#pubEX" prefHeight="69.0" prefWidth="310.0" style="-fx-background-color: #2d3447; -fx-border-radius: 0;" text="Pubblica Opera" textFill="#a0a2ab" />
+            <JFXButton fx:id="assTrascrizioniButton" onAction="#assTrascrizioniButtonFired" onMouseClicked="#clickAss" onMouseEntered="#assEN" onMouseExited="#assEX" prefHeight="69.0" prefWidth="310.0" style="-fx-background-color: #2d3447; -fx-border-radius: 0;" text="Assegna Trascrizioni" textFill="#a0a2ab" />
+            <JFXButton fx:id="assExpButton" onAction="#assExpButtonFired" onMouseClicked="#clickExp" onMouseEntered="#expEN" onMouseExited="#expEX" prefHeight="69.0" prefWidth="310.0" style="-fx-background-color: #2d3447; -fx-border-radius: 0;" text="Assegna Esperienza" textFill="#a0a2ab" />
+            <JFXButton fx:id="adminButton" onAction="#adminButtonFired" onMouseClicked="#clickAmm" onMouseEntered="#ammEN" onMouseExited="#ammEX" prefHeight="69.0" prefWidth="310.0" style="-fx-background-color: #2d3447; -fx-border-radius: 0;" text="Amministrazione" textFill="#a0a2ab" />
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
