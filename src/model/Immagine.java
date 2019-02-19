@@ -12,6 +12,7 @@ public class Immagine implements Pagina {
     private String timestamp;
     private String lingua;
     private String nomeOpera;
+    private String utente;
 
 
     public Immagine(int n_pagina, String nomeOpera, String lingua, String src, int id) {
@@ -29,6 +30,7 @@ public class Immagine implements Pagina {
         this.setValidazione(resultSet.getInt("validazione"));
         this.setFonte(resultSet.getString("sorgente"));
         this.setTimestamp(resultSet.getString("time_stamp"));
+        this.setUser(resultSet.getString("utente"));
     }
 
     @Override
@@ -105,6 +107,16 @@ public class Immagine implements Pagina {
     public void setNomeOpera(String nomeOpera) {
         this.nomeOpera = nomeOpera;
     }
+
+    public String getUser() {
+        return utente;
+    }
+
+    public void setUser(String utente) {
+        this.utente = utente;
+    }
+
+
 
     @Override
     public String toString() {

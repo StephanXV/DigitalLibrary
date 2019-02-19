@@ -7,33 +7,33 @@ import java.io.IOException;
 import java.sql.*;
 
 public class DatabaseConnector {
-	public static Connection connessioneDB() {
+    public static Connection connessioneDB() {
 
         Connection conn = null;
         String port = null;
         String username = null;
         String password = null;
-        
+
         String filePath = new File("").getAbsolutePath();
-    	final String FILENAME = filePath + "/config.txt";
+        final String FILENAME = filePath + "/config.txt";
 
-    		BufferedReader br = null;
-    		FileReader fr = null;
+        BufferedReader br = null;
+        FileReader fr = null;
 
-    		try {
-    			
-    			fr = new FileReader(FILENAME);
-    			br = new BufferedReader(fr);
+        try {
 
-                port=br.readLine();
-                username=br.readLine();
-                password=br.readLine();
-    		} catch (IOException e) {
+            fr = new FileReader(FILENAME);
+            br = new BufferedReader(fr);
 
-    			e.printStackTrace();
+            port=br.readLine();
+            username=br.readLine();
+            password=br.readLine();
+        } catch (IOException e) {
 
-    		}
-        
+            e.printStackTrace();
+
+        }
+
         try
         {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -50,7 +50,7 @@ public class DatabaseConnector {
         {
             ex.printStackTrace();
         }
-        
+
         return conn;
     }
 
